@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/clock"
+    android:layout_height="match_parent"
+    tools:context="com.mlab.counterapp.MainActivity">
+
+    <TextView
+        android:id="@+id/counterTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:background="#67825634"
+        android:textSize="120sp"
+        android:textAlignment="center"
+        android:textColor="#726526"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/minusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#ffff"
+        android:background="#726526"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteY="391dp"
+        tools:layout_editor_absoluteX="292dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/resetBtn"
+        android:layout_toStartOf="@+id/resetBtn" />
+
+    <Button
+        android:id="@+id/plusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="#ffff"
+        android:background="#726526"
+        android:textSize="40sp"
+        android:layout_toEndOf="@id/resetBtn"
+        android:layout_toStartOf="@id/resetBtn"
+        android:layout_toRightOf="@id/resetBtn"
+        tools:layout_editor_absoluteY="391dp"
+        tools:layout_editor_absoluteX="292dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textColor="#ffff"
+        android:textSize="60sp"
+        android:background="#923847"
+        tools:layout_editor_absoluteY="403dp"
+        tools:layout_editor_absoluteX="103dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/counterTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="Created by Kabelo Mokoena"
+        android:textSize="18sp"
+        android:background="#000"
+        android:textColor="#ffff"/>
+
+
+</RelativeLayout>
